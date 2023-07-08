@@ -1,0 +1,156 @@
+body {
+  /* background-color: #333; */
+  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(20, 20, 20, 0.4)), url(https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #d9db57;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 5%;
+}
+.compute_btn{
+  margin-top: 1%;
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  height: 28px;
+  border-radius: 3px;
+  border: none;
+  background-color:teal;
+  font-weight: bold;
+  cursor: pointer;
+}
+.compute_btn:hover{
+  box-shadow: 0 0 5px yellow;
+}
+
+.lists{
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: darkslategray;
+  color: rgb(229, 233, 173);
+  height: 250px;
+  overflow: auto;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding-left: 1%;
+  padding-right: 1%;
+  border-radius: 5px;
+  border: 1px solid rgb(146, 24, 134);
+}
+.lists div{
+  width: 48%;
+  /* background-color: aqua; */
+}
+.lists div ul{
+  color: rgba(255, 255, 0, 0.842);
+  font-size: 17px;
+  width: 30%;
+  margin-left: 15%;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.bothItem{
+  background-color:rgb(34, 33, 68);
+  margin-top: 2%;
+  width: 32%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border: 1px solid rgb(209, 216, 117);
+}
+
+
+.inputList input{
+  margin-left: 1%;
+  margin-bottom: 1%;
+}
+.inputList input{
+  height: 20px;
+}
+.inputList button{
+  height: 25px;
+  cursor: pointer;
+  border: none;
+  background-color:cadetblue;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.inputList label{
+  font-weight: bold;
+}
+.combineUL{
+  list-style: none;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 18px;
+  color: rgb(172, 235, 113);
+  margin-right: 10%;
+}
+
+.combineItem{
+  background-color:rgb(34, 33, 68);
+  margin-top: 2%;
+  width: 32%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-bottom: 3%;
+  border: 1px solid yellow;
+}
+
+.bothItem ul{
+  list-style: none;
+  font-size: 18px;
+  color: rgb(172, 235, 113);
+  margin-right: 10%;
+}
+
+@media screen and (max-width: 673px){
+  .App{
+    padding-top: 15%;
+  }
+  .inputList{
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  .inputList input{
+    width: 50% !important;
+    border-radius: 2px;
+    border: none;
+    border: 1px solid black;
+  }
+  .inputList button{
+    height: 24px;
+  }
+  .lists{
+    margin-top: 5%;
+    width: 90%;
+  }
+  .compute_btn{
+    margin-top: 3%;
+  }
+  .bothItem{
+    margin-top: 5%;
+    width: 80%;
+  }
+  .combineItem{
+    margin-top: 5%;
+    width: 80%;
+    margin-bottom: 20%;
+  }
+  .bothItem ul{
+    margin-right: 10%;
+  }
+}
